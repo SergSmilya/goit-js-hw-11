@@ -13,3 +13,19 @@
 .search-form button {
     border-radius: 8px;
 }
+
+.gallery {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.load-more {
+    display: none;
+}
+
+.see {
+    display: block;
+    border-radius: 50px;
+}
