@@ -1,0 +1,15 @@
+.search-form {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    border-radius: 8px;
+    background-color: aqua;
+}
+
+.search-form input {
+    border-radius: 8px;
+}
+
+.search-form button {
+    border-radius: 8px;
+}
