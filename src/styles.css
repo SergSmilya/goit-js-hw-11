@@ -1,7 +1,19 @@
+body {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 5px;
+}
+
 .search-form {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    padding: 10px;
     border-radius: 8px;
     background-color: aqua;
 }
@@ -12,20 +24,28 @@
 
 .search-form button {
     border-radius: 8px;
+    outline: none;
 }
 
 .gallery {
+
     margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: center;
+    gap: 1em;
 }
 
-.load-more {
-    display: none;
+.up-link {
+    opacity: 70%;
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    color: red;
 }
 
-.see {
-    display: block;
-    border-radius: 50px;
+.photo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
