@@ -11,17 +11,15 @@ const image_type = 'photo';
 const orientation = 'horizontal';
 const safesearch = 'true';
 const per_page = 40;
-let page = 1;
 
-export default async function getSearchValue(value) {
+export default async function getSearchValue(value, page) {
   Loading.pulse('Loading');
-
-  page += 1;
 
   try {
     const response = await axios.get(
       `${URL}?key=${API_KEY}&q=${value}&image_type=${image_type}&orientation=${orientation}&safesearch=${safesearch}&per_page=${per_page}&page=${page}`
     );
+
     return response;
   } catch (error) {
     console.error(error);
