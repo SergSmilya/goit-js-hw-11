@@ -17,7 +17,7 @@ export default class ApiServise {
     Loading.pulse('Loading');
 
     try {
-      const response = await axios.get(
+      const response = await axios(
         `${this.URL}?key=${this.API_KEY}&q=${this.searchValue}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${this.page}`
       );
       this.page += 1;
