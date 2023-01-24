@@ -18,7 +18,8 @@ export default class ApiServise {
 
     try {
       const response = await axios(
-        `${this.URL}?key=${this.API_KEY}&q=${this.searchValue}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${this.page}`
+        `${this.URL}?key=${this.API_KEY}&q=${this.searchValue}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${this.page}`,
+        { headers: { 'Permissions-Policy': false } }
       );
       this.page += 1;
       return response;
