@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import { Notify } from 'notiflix';
 import { Loading } from 'notiflix/build/notiflix-loading-aio';
 
