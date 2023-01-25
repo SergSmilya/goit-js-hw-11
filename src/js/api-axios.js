@@ -1,8 +1,8 @@
-// import axios from 'axios';
+import axios from 'axios';
 import { Notify } from 'notiflix';
 import { Loading } from 'notiflix/build/notiflix-loading-aio';
 
-const axios = require('axios');
+// const axios = require('axios');
 
 export default class ApiServise {
   constructor() {
